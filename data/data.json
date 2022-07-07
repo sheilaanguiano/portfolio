@@ -1,0 +1,91 @@
+{
+    "projects": [
+        {
+            "id" : 0,
+            "project_name" : "Random Quote Generator",
+            "description" : "App that displays a random famous quote each time the button is clicked, or after 10 seconds when random quote will appear with a random background",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/fsjs_techdegree_p1/",
+            "github_link" : "https://github.com/sheilaanguiano/fsjs_techdegree_p1",
+            "img_urls" : [
+                "/img/p1.jpg",
+                "/img/p1-2.jpg"
+            ]
+        },
+        {
+            "id" : 1,
+            "project_name" : "Data Pagination and Filtering",
+            "description" : "A website that uses the pagination web development technique to divide a file of 42 students into pages of 9 persons. It also uses a search bar to do an active search as you type and display a student or a 'not found' page",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/data-pagination-and-filtering/",
+            "github_link" : "https://github.com/sheilaanguiano/data-pagination-and-filtering",
+            "img_urls" : [
+                "/img/p2.jpg",
+                "/img/p2-2.jpg",
+                "/img/p2-3.jpg"
+            ]
+        },
+        {
+            "id" : 2,
+            "project_name" : "Interactive Form",
+            "description" : "Interactive Form for a Conference that has several features such as a casading menu for the shirt design and color menu, validation on submit along with accesibility",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/interactive-form/",
+            "github_link" : "https://github.com/sheilaanguiano/interactive-form",
+            "img_urls" : [
+                "/img/p3.jpg",
+                "/img/p3-2.jpg",
+                "/img/p3-3.jpg"
+            ]
+        },
+        {
+            "id" : 3,
+            "project_name" : "Phrase Hunter",
+            "description" : "A browser-based word guessing game created using Object-oriented programming ",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/interactive-form/",
+            "github_link" : "https://github.com/sheilaanguiano/interactive-form",
+            "img_urls" : [
+                "/img/p3.jpg",
+                "/img/p3-2.jpg",
+                "/img/p3-3.jpg"
+            ]
+        },
+        {
+            "id" : 4,
+            "project_name" : "Public API Request",
+            "description" : "An app for a fictional company creates a employee directory using the Random User Generator API",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Random User Generator API"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/employee-directory/",
+            "github_link" : "https://github.com/sheilaanguiano/employee-directory",
+            "img_urls" : [
+                "/img/p5.jpg",
+                "/img/p5-2.jpg"
+            ]
+        }
+
+        
+
+    ]
+}
