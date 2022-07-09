@@ -1,3 +1,4 @@
+const e = require('express');
 const express = require('express');
 const { restart } = require('nodemon');
 const app = express();
@@ -16,15 +17,24 @@ app.use((req, res, next) => {
 	const err  = new Error('Not Found');
 	err.status = 404;
 	next(err);
+	// res.status(404).render('not-found');
 });
 
 /* Global error handler*/ 
 app.use((err, req, res, next) => {	
-	if (err.status !== 400){
+	if (err.status === 404) {
+		// err.status = 404;
+		err.message = 'Not Found';
+		res.status(404).render('error', { err });
+	} else {
+		err.message = `Oops! something is wrong with the server`;
 		err.status = 500;
-		err.message = `Opps, something seems to be wrong with the server`;
-		res.status(err.status || 500).render('error', { err });
+		res.render('error', { err });
 	}
+	// 	err.status = 500;
+	// 	err.message = `Opps, something seems to be wrong with the server`;
+	// 	res.status(err.status || 500).render('error', { err });
+	// }
 	
 	// res.locals.error = err;
 	// console.log(err);

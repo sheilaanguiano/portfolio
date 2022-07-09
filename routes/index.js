@@ -5,8 +5,6 @@ const { projects } = require('../data/data.json');
 // ---------- GET home page----------
 router.get('/', (req, res, next) => {
 	
-	// throw new Error('500');
-    
 	/* Passing the project data to the index template */
 	res.render('index', { projects });
 });
@@ -28,6 +26,12 @@ router.get('/projects/:id', (req, res, next) => {
 	} 
 
 });
+
+// -------- GET about page ------
+router.get('/500error', (req, res) => {
+	throw new Error (500);
+});
+
 
 
 module.exports = router;
