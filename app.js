@@ -1,4 +1,5 @@
 const express = require('express');
+const { restart } = require('nodemon');
 const app = express();
 
 const indexRouter = require('./routes/index');
@@ -10,27 +11,29 @@ app.use('/', indexRouter);
 
 
 //   ------------ ERROR HANDLERs --------
+/* 404 Error handler */
 app.use((req, res, next) => {
-	const err = new Error('Not Found');
+	const err  = new Error('Not Found');
 	err.status = 404;
 	next(err);
-
 });
 
 /* Global error handler*/ 
-app.use((err, req, res, next) => {
-	res.locals.error = err;
-	const status = err.status || 500;
-	res.status(status);
-	res.render('error'); 
+app.use((err, req, res, next) => {	
+	if (err.status !== 400){
+		err.status = 500;
+		err.message = `Opps, something seems to be wrong with the server`;
+		res.status(err.status || 500).render('error', { err });
+	}
+	
+	// res.locals.error = err;
+	// console.log(err);
+	// const status = err.status || 500;
+	// res.message = 'Something went wrong with the server';
+	// res.status(status);
+	// res.render('error', { err });
 
-	// if(err.status === 404){
-	// 	res.render('error', { err });
-	// } else {
-	// 	err.message = err.message || `Opps! It seems something is wrong with the server`;
-	// 	res.render( 'error', { err });
-	// }
-});
+	});
 
 
 
