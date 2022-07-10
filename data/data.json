@@ -83,6 +83,23 @@
                 "/img/p5.jpg",
                 "/img/p5-2.jpg"
             ]
+        },
+        {
+            "id" : 5,
+            "project_name" : "2019 Portfolio",
+            "description" : "Developed in 2019 and still my current personal Portfolio. I developed it, after working on my personal brand guidelines, UX artifacts (A persona, Empathy Map & User Flow) and low fidelity wireframing",
+            "technologies" : [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "live_link" : "https://sheilaanguiano.github.io/",
+            "github_link" : "https://github.com/sheilaanguiano/sheilaanguiano.github.io",
+            "img_urls" : [
+                "/img/p5.jpg",
+                "/img/p5-2.jpg",
+                "/img/p5-3.jpg"
+            ]
         }
 
         

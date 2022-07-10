@@ -30,19 +30,7 @@ app.use((err, req, res, next) => {
 		err.message = `Oops! something is wrong with the server`;
 		err.status = 500;
 		res.render('error', { err });
-	}
-	// 	err.status = 500;
-	// 	err.message = `Opps, something seems to be wrong with the server`;
-	// 	res.status(err.status || 500).render('error', { err });
-	// }
-	
-	// res.locals.error = err;
-	// console.log(err);
-	// const status = err.status || 500;
-	// res.message = 'Something went wrong with the server';
-	// res.status(status);
-	// res.render('error', { err });
-
+		}
 	});
 
 
