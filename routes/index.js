@@ -22,8 +22,11 @@ router.get('/projects/:id', (req, res, next) => {
 
 	if (project){
 		res.render('project', { project });
-	} 
-
+	} else {
+		const err = new Error();
+		err.status = 404;
+		next(err);
+	}
 });
 
 // -------- GET error page ------
